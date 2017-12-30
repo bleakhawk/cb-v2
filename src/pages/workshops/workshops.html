@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar [color]="'cb-purple'">
+    <ion-title>
+      Workshops
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item-sliding *ngFor="let workshop of workshops">
+      {{workshop.name}}
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>
